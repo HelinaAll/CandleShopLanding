@@ -1,0 +1,244 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+* { 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body { 
+    font-family: 'Lato', sans-serif;
+    line-height: 2;
+}
+
+.container { 
+    height: 95vh;
+    background-image: linear-gradient(to bottom right, rgba(255, 255, 255, 0.671), rgba(0, 0, 0, 0.726)),
+    url('../img/candle1.jpg');
+    background-position: center;
+    background-size: cover;
+}
+
+.intro-image { 
+    background-attachment: fixed;
+    background-image: url('../img/candle1.jpg');
+    background-size: cover;
+    background-position: bottom;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.intro-image__text a { 
+    background-color: #cd630779;
+    border: 2px solid #672004;
+    color: #fbef87;
+    display: inline-block;
+    font-size: 3rem;
+    padding: 2rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: all 1s ease-in-out;
+    animation-name: moveInRight;
+    animation-duration: 4s;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes moveInRight { 
+    0% { 
+        transform: translateX(-1000px);
+        opacity: 0;
+    }
+
+    80% { 
+        transform: translateX(50px);
+    }
+
+    100% { 
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.intro-image__text a:hover { 
+    transform: scale(1.2);
+}
+
+.intro-text { 
+    background-color: #845c44;
+    color: #fcff85;
+    display: flex;
+    align-items: justify;
+    justify-content: center;
+    height: 350px;
+    padding: 0 20rem;
+    text-align: center;
+    margin-bottom: -4rem;
+    margin-top: -2rem;
+    clip-path: polygon(56% 5%, 100% 0, 100% 43%, 100% 82%, 87% 84%, 46% 92%, 0% 100%, 0% 43%, 0 0);
+}
+
+.intro-text__textbox h3 { 
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 2rem;
+    margin-top: 10%;
+    overflow: hidden;
+    text-transform: uppercase;
+    width: 100%;
+}
+
+.text-solid { 
+    font-size: 1rem;
+    margin-bottom: 8rem;
+}
+
+.packaging-image {
+    background-attachment: fixed;
+    background-image: url('../img/candle3.jpg');
+    background-size: cover;
+    background-position: top; 
+    height: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.packaging-image__text  { 
+    border-bottom: 0.2rem solid #fbcc34;
+    color: #fff;
+    display: inline-block;
+    font-size: 2rem;
+    padding: 1rem;
+    margin-top: 5rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: all 0.3s;
+    animation-name: moveInRight;
+    animation-duration: 4s;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes moveInRight { 
+    0% { 
+        transform: translateX(-1000px);
+        opacity: 0;
+    }
+
+    80% { 
+        transform: translateX(50px);
+    }
+
+    100% { 
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.packaging-image__text:hover { 
+    background-color: #d7bbb490;
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
+    transform: translateY(-5px);
+}
+
+.packaging-image__text:active{ 
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+    transform: translateY(5px);
+}
+
+.packaging-image__text a:hover { 
+    transform: scale(1.2);
+} 
+
+.packaging_text__textbox { 
+    background-color: #7a757e;
+    border: 2px solid #b2acaf;
+    color: #f8e4d3;
+    display: inline-block;
+    font-size: 1rem;
+    align-items: center;
+    padding: 2rem;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: all 1s ease-in-out;
+}
+
+.tutorials-image {
+    background-attachment: fixed;
+    background-image: url('../img/candle2.jpg');
+    background-size: cover;
+    background-position: top; 
+    height: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.tutorials-image__text { 
+    border-bottom: 0.2rem solid #a87453;
+    color: #fff;
+    display: block;
+    font-size: 2rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    animation-name: moveInLeft;
+    animation-duration: 4s;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes moveInLeft { 
+    0% { 
+        transform: translateX(-1000px);
+        opacity: 0;
+    }
+
+    80% { 
+        transform: translateX(50px);
+    }
+
+    100% { 
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.tutorials-image__text:hover { 
+    background-color: #d7bbb490;
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
+    transform: translateY(-5px);
+}
+
+.tutorials-image__text:active{ 
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+    transform: translateY(5px);
+}
+
+.tutorials-image__text a:hover { 
+    transform: scale(1.2);
+} 
+
+.footer { 
+    height: 250px;
+    background-color: #3d2920;
+    color: #dbc0ab;
+    font-size: 2rem;
+    padding-top: 2rem;
+    text-align: center;
+}
+
+.footer ul li { 
+    display: inline-block;
+    margin: 1rem;
+}
+
+
+.footer ul li a { 
+    color: #dbc0ab;
+    text-decoration: none;
+}
+
+.footer ul li:hover { 
+    /*color: #ff87e3;*/
+    transform: scale(1.3);
+}
